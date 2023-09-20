@@ -1,6 +1,4 @@
 module LibA
-    ( someFunc
-    ) where
+    ( A ) where
 
-someFunc :: String
-someFunc = "someFunc"
+data A = A Int

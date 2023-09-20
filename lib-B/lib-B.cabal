@@ -23,10 +23,11 @@ source-repository head
   type: git
   location: https://github.com/githubuser/lib-B
 
-library
-  exposed-modules:
-      Lib
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
   other-modules:
+      Lib
       Paths_lib_B
   hs-source-dirs:
       src

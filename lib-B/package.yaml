@@ -33,8 +33,10 @@ ghc-options:
 - -Wpartial-fields
 - -Wredundant-constraints
 
-library:
-  source-dirs: src
-  dependencies:
-    - lib-A
-    - template-haskell
+tests:
+  test:
+    main: Spec.hs
+    source-dirs: src
+    dependencies:
+      - lib-A
+      - template-haskell
